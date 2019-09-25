@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ControleDeProjeto" Class="ControleDeProjetosDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=ELMNWRK323\SQLEXPRESS;Initial Catalog=ControleDeProjeto;Persist Security Info=True;User ID=sa" SettingsObjectName="ControleDeProjetos.DAL.Properties.Settings" SettingsPropertyName="ControleDeProjetoConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.GetFornecedores" Method="GetFornecedores">
+    <ElementType Name="GetFornecedoresResult">
+      <Column Name="IDFornecedor" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="FornecedorNome" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.GetFornecedoresByNome" Method="GetFornecedoresByNome">
+    <Parameter Name="Nome" Parameter="nome" Type="System.String" DbType="VarChar(50)" />
+    <ElementType Name="GetFornecedoresByNomeResult">
+      <Column Name="IDFornecedor" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="FornecedorNome" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.GetUsuarioByLogin" Method="GetUsuarioByLogin">
+    <Parameter Name="email" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="senha" Type="System.String" DbType="VarChar(50)" />
+    <ElementType Name="GetUsuarioByLoginResult">
+      <Column Name="Nome" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TipoUsuario" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.GravaUsuario" Method="GravaUsuario">
+    <Parameter Name="Nome" Parameter="nome" Type="System.String" DbType="VarChar(255)" />
+    <Parameter Name="Email" Parameter="email" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Senha" Parameter="senha" Type="System.String" DbType="VarChar(255)" />
+    <Parameter Name="TipoUsuario" Parameter="tipoUsuario" Type="System.String" DbType="VarChar(5)" />
+    <ElementType Name="GravaUsuarioResult">
+      <Column Name="Nome" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TipoUsuario" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.GetUsuarios" Method="GetUsuarios">
+    <ElementType Name="GetUsuariosResult">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Nome" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="TipoUsuario" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="DtCadastro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Ativo" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

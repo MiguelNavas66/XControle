@@ -1,0 +1,12 @@
+c:\Projetos\ControleDeProjetos\ControleDeProjetos.DAL\bin\Debug\ControleDeProjetos.DAL.dll.config
+c:\Projetos\ControleDeProjetos\ControleDeProjetos.DAL\bin\Debug\ControleDeProjetos.DAL.dll
+c:\Projetos\ControleDeProjetos\ControleDeProjetos.DAL\bin\Debug\ControleDeProjetos.DAL.pdb
+c:\Projetos\ControleDeProjetos\ControleDeProjetos.DAL\bin\Debug\EntityFramework.dll
+c:\Projetos\ControleDeProjetos\ControleDeProjetos.DAL\bin\Debug\EntityFramework.SqlServer.dll
+c:\Projetos\ControleDeProjetos\ControleDeProjetos.DAL\bin\Debug\EntityFramework.xml
+c:\Projetos\ControleDeProjetos\ControleDeProjetos.DAL\bin\Debug\EntityFramework.SqlServer.xml
+c:\Projetos\ControleDeProjetos\ControleDeProjetos.DAL\obj\Debug\ControleDeProjetos.DAL.csproj.CoreCompileInputs.cache
+c:\Projetos\ControleDeProjetos\ControleDeProjetos.DAL\obj\Debug\ControleDeProjetos.DAL.csproj.CopyComplete
+c:\Projetos\ControleDeProjetos\ControleDeProjetos.DAL\obj\Debug\ControleDeProjetos.DAL.dll
+c:\Projetos\ControleDeProjetos\ControleDeProjetos.DAL\obj\Debug\ControleDeProjetos.DAL.pdb
+C:\Projetos\ControleDeProjetos\ControleDeProjetos.DAL\obj\Debug\ControleDeProjetos.DAL.csprojAssemblyReference.cache
